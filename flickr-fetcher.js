@@ -23,7 +23,7 @@ FlickrFetcher = {
             fetch = jQuery.getJSON.bind(jQuery);
         }
         var url = 'https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key='
-                + apiKey.toString() + '&text=kittens&format=json&nojsoncallback=1'
+                + apiKey.toString() + '&safe_search=1&text=kittens&format=json&nojsoncallback=1'
         return fetch(url);
     },
 
