@@ -28,9 +28,10 @@ FlickrFetcher = {
     },
 
     fetchPhotos: function(apiKey, fetch) {
-        return FlickrFetcher.fetchFlickrData(apiKey, fetch).then(function(data) {
-            return data.photos.photo.map(FlickrFetcher.transformPhotoObj);
-        });
+        return FlickrFetcher.fetchFlickrData(apiKey, fetch)
+            .then(function(data) {
+                return data.photos.photo.map(FlickrFetcher.transformPhotoObj);
+            });
     }
 };
 
