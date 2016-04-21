@@ -125,7 +125,7 @@ describe('FlickrFetcher', function() {
                 },
                 fakeFetcher = function(url) {
                     var expectedURL = 'https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key='
-                                + apiKey + '&safe_search=1&text=kittens&format=json&nojsoncallback=1'
+                                + apiKey + '&safe_search=1&text=pugs&format=json&nojsoncallback=1'
                     expect(url).to.equal(expectedURL)
                     return Promise.resolve(fakeData);
                 };
@@ -176,7 +176,7 @@ describe('FlickrFetcher', function() {
                     },
                     fakeFetcher = function(url) {
                         var expectedURL = 'https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key='
-                                    + apiKey + '&safe_search=1&text=kittens&format=json&nojsoncallback=1'
+                                    + apiKey + '&safe_search=1&text=pugs&format=json&nojsoncallback=1'
                         expect(url).to.equal(expectedURL)
                         return Promise.resolve(fakeData);
                     };
